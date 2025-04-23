@@ -58,8 +58,7 @@ public class bitmanuplation {
 
     public static int unSetRightMostSetBit(int num){
         return (num & num-1);
-    }
-
+    } 
     public static void NoOfSetBits(int num){
         int count = 0;
         while (num != 0 ){
