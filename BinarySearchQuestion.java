@@ -16,13 +16,13 @@ public class BinarySearchQuestion {
         int ans1 = binarySearchCeil(arr,17);
         System.out.println("ceil is :"+ ans1);
     }
-    static int binarySearch(int arr[], int target, boolean isFirst){
+   static int binarySearch(int arr[], int target, boolean isFirst){
         int ans = -1;
         int start = 0;
         int end = arr.length-1;
         while (start<=end){
             int mid = start + (end-start)/2;
-            if(arr[mid] == target){
+            if( arr[mid] == target){
                 ans = mid;
                 if (isFirst) {
                     end = mid-1;
